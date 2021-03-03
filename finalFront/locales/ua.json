@@ -1,0 +1,118 @@
+{
+  "lang": {
+    "en": "Англійська",
+    "ru": "Російська",
+    "ua": "Українська"
+  },
+  "nav": {
+    "hello": "Привіт, {firstName} {secondName}",
+    "lang": "Мова",
+    "user": "Аккаунт",
+    "profile": "Профіль",
+    "report": "Звіт",
+    "logout": "Вихід"
+  },
+  "home": {
+    "action": "Дія",
+    "addAction": "Додати дію",
+    "delAction": "Видалити дію",
+    "table": {
+      "action": "Дія",
+      "sum": "Сума",
+      "currency": "Валюта",
+      "description": "Опис",
+      "date": "Дата"
+    }
+  },
+  "actionAdd": {
+    "title": "Що ви хочете зробити?",
+    "action": "Дія",
+    "enterError": "Введіть правильне значення",
+    "selectError": "Виберіть правильне значення",
+    "optionAction": {
+      "null": "Виберіть варіант",
+      "income": "Дохід",
+      "exchange": "Обміняти",
+      "forceExchange": "Примусовий обмін"
+    },
+    "sum": "Сума",
+    "currency": "Валюта",
+    "optionCurrency": {
+      "null": "Виберіть варіант",
+      "uah": "UAH",
+      "usd": "USD"
+    },
+    "income": {
+      "date": "Дата",
+      "forceRate": "Примусовий обмінний курс {currency}",
+      "forceDate": "Примусовий обмінний курс {currency}"
+    },
+    "exchange": {
+      "rate": "Курс"
+    },
+    "datepickerLang": "ua-UA",
+    "cancel": "Скасувати",
+    "ok": "Ok"
+  },
+  "profile": {
+    "profile": "Профіль",
+    "editButton": "Змінити",
+    "firstName": "Ім'я",
+    "lastName": "Прізвище",
+    "taxRate": "Ставка податку",
+    "forceExchange": "Примусовий обмін",
+    "forceExchangeAmount": "Примусова сума обміну",
+    "notification": "Термін повідомлення"
+  },
+  "register": {
+    "confirmPassError": "Пароль і пароль підтвердження не збігаються",
+    "title": "Увійти",
+    "confirmPass": "Підтвердити пароль",
+    "login": "Логін"
+  },
+  "auth": {
+    "email": "Електронна пошта",
+    "pass": "Пароль",
+    "emailError": "Введіть правильну адресу електронної пошти",
+    "passError": "Пароль повинен містити не менше 6 символів",
+    "forgotPass": "Я забув пароль",
+    "rememberMe": "Запам'ятати мене"
+  },
+  "login": {
+    "title": "Увійти",
+    "register": "Реєстрація"
+  },
+  "profileEdit": {
+    "title": "Якщо ви не хочете змінювати поле, залиште його порожнім",
+    "action": "Дія",
+    "enterError": "Введіть правильне значення",
+    "selectError": "Виберіть правильне значення",
+    "field": "Поле",
+    "previous": "Попередній",
+    "new": "Новий",
+    "firstName": "Ім'я",
+    "lastName": "Прізвище",
+    "taxRate": "Ставка податку",
+    "forcePercentage": "Сума примусового обміну",
+    "exchangeFlag": "Примусовий обмін прапором",
+    "notificationPeriod": "Період повідомлення",
+    "optionsNotification": {
+      "null": "Виберіть варіант",
+      "not": "Ні",
+      "month": "Кожен місяць",
+      "quarter": "Кожен квартал"
+    }
+  },
+  "report": {
+    "title": "Звіт",
+    "error": "Вибрати зображення користувача> Звіт",
+    "startDate": "з",
+    "endDate": "До",
+    "доход": "Дохід",
+    "tax": "Податок",
+    "someLog": "Деяка інформація, яка представляється:",
+    "log1": "кількість і сума гривневих доходів",
+    "log2": "кількість і сума в гривнях доларових доходів",
+    "log3": "прибуток від курсової різниці"
+  }
+}

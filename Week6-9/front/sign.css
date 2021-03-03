@@ -1,0 +1,262 @@
+/* CSS Document */
+* {
+    font-family: Roboto;
+}
+body {
+    background-color: whitesmoke
+}
+.left img {
+    margin-left: 15%;
+    margin-right: 50%;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+}
+.section {
+    position: absolute;
+    margin-top: 0;
+    background-color: white;
+    margin-left: 55%;
+    margin-right: 15%;
+    width: 30%;
+    height: 100%;
+}
+.text {
+    text-decoration-color: #09b7ae;
+}
+.langSelector {
+    width: 120px;
+    height: 40px;
+    margin: 2% 10% 0 70%;
+    padding-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 2px solid rgb(228, 231, 236);
+    border-radius: 4px;
+    text-align: left;
+}
+.langSelector img {
+    vertical-align: middle;
+    transform: rotate(90deg);
+    color: rgb(39, 203, 192);
+}
+.langSelector ul ul {
+    position: absolute;
+    display: none;
+}
+.langSelector ul {
+    margin: 0;
+    height: 40px;
+    list-style: none;
+}
+.langSelector ul:hover > ul {
+    display: block;
+    position: absolute;
+    margin-top: 25px;
+    height: 80px;
+}
+.langSelector ul > ul li {
+    margin-left: -12px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-color: white;
+    min-width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    border: 2px solid rgb(228, 231, 236);
+}
+.text {
+    color: rgb(39, 203, 192);
+}
+.mainHeading {
+    margin-top: 1%;
+    text-align: center;
+    font-size: 36px;
+}
+.mainHeading span {
+    margin-top: 50px;
+}
+.mainHeadingImg {
+    vertical-align: middle;
+}
+.formController {
+    width: 100%;
+}
+.formController .menu li:hover span {
+    color: rgb(115, 82, 225);
+}
+.formController .menu {
+    display: flex;
+    position: relative;
+    width: 60%;
+    margin-top: 1%;
+    margin-left: 20%;
+    line-height: 80px;
+    background: #fff;
+}
+.formController .menu li {
+    font-weight: bold;
+    list-style: none;
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+}
+.formController .menu li:hover span {
+    color: rgb(115, 82, 225);
+}
+.formController .menu .line {
+    position: absolute;
+    height: 5px;
+    width: 50%;
+    background: rgb(115, 82, 225);
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+.lineshadow {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    margin-top: -5px;
+    background: #ddd;
+    z-index: 1;
+}
+.leftstr, .rightstr {
+    float: left;
+    width: 50%;
+}
+.rightstr {
+    text-align: right;
+}
+.custom-field {
+    margin: 3% 17% 0 17%;
+    height: auto;
+}
+.custom-field label {
+    font-size: 18px;
+}
+.custom-field input:focus {
+    border-color: rgb(39, 203, 192);
+    transition-delay: 0.1s
+}
+.custom-field .custom-input {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border: 2px solid rgb(228, 231, 236);
+    border-radius: 5px;
+    padding: 12px;
+    /*margin-bottom: 10%;*/
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    transition: border-color 0.3s ease;
+}
+.custom-field .custom-button {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: rgb(39, 203, 192);
+    border: 0px solid #ddd;
+    border-radius: 40px;
+    outline: 0 !important;
+    height: 30px;
+    width: 100%;
+    color: white;
+}
+.custom-button :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.custom-text {
+    font-size: 18px;
+    text-align: center;
+    height: 80px;
+    margin: 4% 10% 0% 10%;
+    overflow: hidden;
+}
+.custom-label {
+    font-size: 16px;
+    text-align: center;
+    height: 80px;
+    overflow: hidden;
+}
+
+.bigColorText {
+    color: rgb(115, 82, 225);
+    margin-top: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+	text-align: center;
+}
+.custom-link {
+    cursor: pointer;
+    color: rgb(39, 203, 192);
+}
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+}
+.custom-checkbox div {
+    margin-left: 10px;
+}
+.error {
+    /*margin-top: 15px;*/
+    text-align: center;
+    color: red;
+}
+.popUp {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.closepopUp {
+    color: #aaa;
+    margin-left: auto;
+    font-size: 28px;
+    font-weight: bold;
+}
+.closepopUp:hover, .closepopUp:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.popUpHeader {
+    padding: 0;
+    display: flex;
+}
+.popUpHeader h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.popUp-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 0 10px 20px 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 30%;
+}

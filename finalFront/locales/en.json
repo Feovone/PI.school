@@ -1,0 +1,118 @@
+{
+  "lang": {
+    "en": "English",
+    "ru": "Russian",
+    "ua": "Ukrainian"
+  },
+  "nav": {
+    "hello": "Hello, {firstName} {secondName}",
+    "lang": "Language",
+    "user": "User",
+    "profile": "Profile",
+    "report": "Report",
+    "logout": "logout"
+  },
+  "home": {
+    "action": "Action",
+    "addAction": "Add action",
+    "delAction": "Delete action",
+    "table": {
+      "action": "Action",
+      "sum": "Sum",
+      "currency": "Currency",
+      "description": "Description",
+      "date": "Date"
+    }
+  },
+  "actionAdd": {
+    "title": "What do you want to do?",
+    "action": "Action",
+    "enterError": "Enter correct value",
+    "selectError": "Select correct value",
+    "optionAction": {
+      "null": "Please select an option",
+      "income": "Income",
+      "exchange": "Exchange",
+      "forceExchange": "Force Exchange"
+    },
+    "sum": "Sum",
+    "currency": "Currency",
+    "optionCurrency": {
+      "null": "Please select an option",
+      "uah": "UAH",
+      "usd": "USD"
+    },
+    "income": {
+      "date": "Date",
+      "forceRate": "Force {currency} Exchange Rate",
+      "forceDate": "Force {currency} Exchange Rate"
+    },
+    "exchange": {
+      "rate": "Rate"
+    },
+    "datepickerLang": "en-US",
+    "cancel": "Cancel",
+    "ok": "Ok"
+  },
+  "profile": {
+    "profile": "Profile",
+    "editButton": "Edit",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "taxRate": "Tax Rate",
+    "forceExchange": "Force Exchange",
+    "forceExchangeAmount": "Force Exchange Amount",
+    "notification": "Notification Period"
+  },
+  "register": {
+    "confirmPassError": "Password and confirmation password do not match",
+    "title": "Sign On",
+    "confirmPass": "Confirm password",
+    "login": "Login"
+  },
+  "auth": {
+    "email": "Email",
+    "pass": "Password",
+    "emailError": "Enter correct e-mail",
+    "passError": "Password must be at least 6 characters",
+    "forgotPass": "Forgot Password?",
+    "rememberMe": "Remember me"
+  },
+  "login": {
+    "title": "Sign In",
+    "register": "Registration"
+  },
+  "profileEdit": {
+    "title": "If you do not want to change the field, leave it blank",
+    "action": "Action",
+    "enterError": "Enter correct value",
+    "selectError": "Select correct value",
+    "field": "Field",
+    "previous": "Previous",
+    "new": "New",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "taxRate": "Tax Rate",
+    "forcePercentage": "Force Exchange Amount",
+    "exchangeFlag": "Force Exchange Flag",
+    "notificationPeriod": "Notification Period",
+    "optionsNotification": {
+      "null": "Please select an option",
+      "not": "Not",
+      "month": "Every month",
+      "quarter": "Every quarter"
+    }
+  },
+  "report": {
+    "title": "Report",
+    "error": "Select User Image>Report",
+    "startDate": "From",
+    "endDate": "To",
+    "income": "Income",
+    "tax": "Tax",
+    "someLog": "Some log info that represents:",
+    "log1": "number and sum of UAH incomes",
+    "log2": "number and sum in UAH of non-USD incomes",
+    "log3": "foreign exchange gain"
+  }
+}

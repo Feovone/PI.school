@@ -1,0 +1,8 @@
+AddDefaultCharset utf-8
+Redirect  /index /index.php
+Redirect  /auth/login /index.php
+Redirect  /auth/register /index.php
+Redirect  /home /index.php
+php_value session.gc_maxlifetime 172800
+php_value session.cookie_lifetime 172800
+ErrorDocument 404 /index.php

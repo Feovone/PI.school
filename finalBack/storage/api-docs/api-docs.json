@@ -1,0 +1,296 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "My First API",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/action": {
+            "get": {
+                "tags": [
+                    "Action"
+                ],
+                "description": "Get the user's actions",
+                "operationId": "App\\Http\\Controllers\\ActionController::index",
+                "responses": {
+                    "200": {
+                        "description": "User model"
+                    },
+                    "403": {
+                        "description": "Unauthorized"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Action"
+                ],
+                "description": "Add new action",
+                "operationId": "App\\Http\\Controllers\\ActionController::store",
+                "parameters": [
+                    {
+                        "name": "{AddActionForm}",
+                        "in": "header",
+                        "description": "Form parameters",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "unknown request"
+                    },
+                    "201": {
+                        "description": "added"
+                    }
+                }
+            }
+        },
+        "/api/checkCount": {
+            "post": {
+                "tags": [
+                    "Action"
+                ],
+                "description": "Check sum of possible currency exchange",
+                "operationId": "App\\Http\\Controllers\\ActionController::checkCount",
+                "parameters": [
+                    {
+                        "name": "currency",
+                        "in": "header",
+                        "description": "Currency",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "sum of currency"
+                    }
+                }
+            }
+        },
+        "/api/report": {
+            "post": {
+                "tags": [
+                    "Action"
+                ],
+                "description": "Create Report",
+                "operationId": "App\\Http\\Controllers\\ActionController::report",
+                "parameters": [
+                    {
+                        "name": "startDate",
+                        "in": "header",
+                        "description": "From date",
+                        "required": true
+                    },
+                    {
+                        "name": "endDate",
+                        "in": "header",
+                        "description": "To date",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Formed"
+                    }
+                }
+            }
+        },
+        "/api/action/{id}": {
+            "post": {
+                "tags": [
+                    "Action"
+                ],
+                "description": "Create Report",
+                "operationId": "App\\Http\\Controllers\\ActionController::destroy",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Delete by id",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "deleted"
+                    },
+                    "400": {
+                        "description": "incorrect combination user and action"
+                    }
+                }
+            }
+        },
+        "/api/user": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Get a User profile ",
+                "operationId": "App\\Http\\Controllers\\UserController::index",
+                "responses": {
+                    "200": {
+                        "description": "User model"
+                    },
+                    "403": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
+        "/api/userPhotoIndex": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Get the User photo ",
+                "operationId": "App\\Http\\Controllers\\UserController::userPhotoIndex",
+                "parameters": [
+                    {
+                        "name": "conversion",
+                        "in": "query",
+                        "description": "Type of image",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Added photo"
+                    }
+                }
+            }
+        },
+        "/api/userPhotoStore": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Update the User photo ",
+                "operationId": "App\\Http\\Controllers\\UserController::userPhotoStore",
+                "parameters": [
+                    {
+                        "name": "file",
+                        "in": "path",
+                        "description": "Type of image",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Changed"
+                    }
+                }
+            }
+        },
+        "/api/user/{id}": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Update User",
+                "operationId": "App\\Http\\Controllers\\UserController::update",
+                "parameters": [
+                    {
+                        "name": "{User}",
+                        "in": "path",
+                        "description": "User model",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Update"
+                    }
+                }
+            }
+        },
+        "/api/register": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Registration User",
+                "operationId": "App\\Http\\Controllers\\UserController::register",
+                "parameters": [
+                    {
+                        "name": "Email",
+                        "in": "path",
+                        "description": "Registration Email",
+                        "required": true
+                    },
+                    {
+                        "name": "Password",
+                        "in": "path",
+                        "description": "Registration pass",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Email already registered"
+                    },
+                    "default": {
+                        "description": "Registration Complete!"
+                    }
+                }
+            }
+        },
+        "/api/login": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Login User",
+                "operationId": "App\\Http\\Controllers\\UserController::login",
+                "parameters": [
+                    {
+                        "name": "Email",
+                        "in": "path",
+                        "description": "Login Email",
+                        "required": true
+                    },
+                    {
+                        "name": "Password",
+                        "in": "path",
+                        "description": "Login pass",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Incorrect credentials"
+                    },
+                    "default": {
+                        "description": "Login!"
+                    }
+                }
+            }
+        },
+        "/api/logout": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "description": "Delete current token",
+                "operationId": "App\\Http\\Controllers\\UserController::logout",
+                "responses": {
+                    "default": {
+                        "description": "Deleted"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Action",
+            "description": "Actions Users"
+        },
+        {
+            "name": "User",
+            "description": "Auth & Personal Info"
+        }
+    ],
+    "security": [
+        []
+    ]
+}

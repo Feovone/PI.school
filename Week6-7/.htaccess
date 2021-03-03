@@ -1,0 +1,4 @@
+AddDefaultCharset utf-8
+Redirect  /index /index.html 
+Redirect  /auth/login /index.html 
+Redirect  /auth/register /index.html 
